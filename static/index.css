@@ -19,7 +19,7 @@ img {
 }
 
 .background-image {
-  background-image: url("./images/bannerimage.jpg");
+  background-image: url("../images/bannerimage.jpg");
   background-size: cover;
   background-position: center;
   height: 88vh;
