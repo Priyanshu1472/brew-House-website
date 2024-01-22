@@ -1,0 +1,333 @@
+body{
+    background-color: #FFE4C8;
+    margin: 0;
+    padding: 0;
+}
+.sectionmenu{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav li {
+    margin-left: -1px !important;
+}
+
+nav ul {
+    padding-right: 0px !important;
+}
+
+.sectionmenu1{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* border-radius: 10px; */
+    width: 295px;
+    text-align: center;
+    padding: 65px;
+    margin: 20px;
+    display: inline-block;
+    box-shadow:0px 0px 10px 5px #000;
+    
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Bahnschrift';
+}
+
+.product-price {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF5733;
+    margin-bottom: 20px;
+    font-family: 'Bahnschrift';
+}
+
+.divisions ul {
+    padding-left: 32%;
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    padding-right: 250px;
+}
+
+li {
+    margin: 0 30px;
+}
+
+a.underline-on-hover1 {
+    font-family: 'Book Antiqua';
+    text-decoration: none;
+    color: #311C10;
+    font-weight: 600;
+    font-size: 30px;
+    position: relative; /* To allow absolute positioning within the link */
+}
+
+a.underline-on-hover1:hover{
+    color: #000;
+}
+
+/* Create the underline element */
+a.underline-on-hover1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px; /* Adjust the height of the underline as needed */
+    bottom: -5px;
+    left: 0;
+    background-color: #000; /* Adjust the color as needed */
+    transition: width 0.3s; /* Add a smooth transition effect */
+}
+
+/* Define the hover effect */
+a.underline-on-hover1:hover::after {
+    width: 100%; /* Expand the underline from left to right */
+    transition: 0.3s linear;
+}
+
+.ATC-2 {
+    font-family: 'Bahnschrift';
+    z-index: 0;
+    padding: 10px 20px;
+    background-color: #4A4949;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+    /* Add transition to box shadow */
+}
+
+/* Hover effect with box shadow */
+.ATC-2:hover {
+    background-color: #555353;
+    box-shadow: 0px 0px 10px 5px #555353;
+    /* Customize the box shadow here */
+}
+.product-card{
+    overflow: hidden;
+}
+
+.product-card {
+    transition: 500ms;
+    object-fit: cover;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+header {
+  background: #311c10;
+  color: #ffe4c8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 50px;
+  font-family: "Copperplate Gothic Light";
+  color: #ffe4c8;
+  font-weight: 100;
+}
+
+#navbar{
+  background-color: #311C10;
+  display: flex;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left:  250px;
+  margin-top: 55px;
+}
+
+nav li {
+  margin-left: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffe4c8;
+  font-weight: 400;
+  font-size: 27px;
+  font-family: "Book Antiqua";
+}
+
+a.underline-on-hover {
+  text-decoration: none;
+  position: relative; 
+}
+
+a.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; 
+  transition: width 0.3s; 
+}
+
+a.underline-on-hover:hover::after {
+  width: 100%; 
+}
+
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.search-input {
+  background: #ffe4c8;
+  width: 300px; 
+  height: 40px;
+  border: 2px solid #311c10;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.search-input::placeholder {
+  color: #311c10;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+  margin-left: -35px;
+}
+
+svg {
+  margin-top: 5px;
+}
+
+svg #fill1 {
+  fill: #ffe4c8;
+}
+
+svg #fill1:hover {
+  fill: white;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.ecommerce-footer {
+    background-color: #311C10;
+    color: #FFE4C8;
+    padding: 50px 0px 10px 0px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col-md-4 {
+    width: 33.33%;
+    float: left;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.hc hr{
+    background-color: #FFE4C8;
+    height: 2px;
+    border: none;
+    margin: 20px 0;
+    visibility: visible; 
+}
+
+.copyright{
+    text-align: center;
+}
+
+.fas,
+.fab {
+    font-family: FontAwesome;
+}
+
+a{
+    color: #FFE4C8;
+}
+
+a:hover{
+    color: white;
+} 

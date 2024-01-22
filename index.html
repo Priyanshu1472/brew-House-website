@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>BREW HOUSE</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <img src="/images/logo-removebg-preview.png" alt="Coffee Shop Logo">
+            <h1>~BREW HOUSE~</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="underline-on-hover">Home</a></li>
+                <li><a href="/templates/Menu.html" class="underline-on-hover">Menu</a></li>
+                <li><a href="/templates/about.html" class="underline-on-hover">About Us</a></li>
+                <li><a href="/templates/feedback.html" class="underline-on-hover">FeedBack</a></li>
+                <li><a href="/templates/cart.html" class="underline-on-hover" id="openPopup" class="login-button"><svg height="25px" version="1.1" viewBox="0 0 20 20" width="25px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#000000" id="Core" transform="translate(-212.000000, -422.000000)"><g id="shopping-cart" transform="translate(212.000000, 422.000000)"><path id="fill1" d="M6,16 C4.9,16 4,16.9 4,18 C4,19.1 4.9,20 6,20 C7.1,20 8,19.1 8,18 C8,16.9 7.1,16 6,16 L6,16 Z M0,0 L0,2 L2,2 L5.6,9.6 L4.2,12 C4.1,12.3 4,12.7 4,13 C4,14.1 4.9,15 6,15 L18,15 L18,13 L6.4,13 C6.3,13 6.2,12.9 6.2,12.8 L6.2,12.7 L7.1,11 L14.5,11 C15.3,11 15.9,10.6 16.2,10 L19.8,3.5 C20,3.3 20,3.2 20,3 C20,2.4 19.6,2 19,2 L4.2,2 L3.3,0 L0,0 L0,0 Z M16,16 C14.9,16 14,16.9 14,18 C14,19.1 14.9,20 16,20 C17.1,20 18,19.1 18,18 C18,16.9 17.1,16 16,16 L16,16 Z" id="Shape"/></g></g></g></svg></a></li>
+                <li><a href="/templates/login.html" class="underline-on-hover" id="openPopup" class="login-button">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div class="background-image">
+            <div class="content">
+                <img src="/images/bgg2.jpg" alt="" style="margin-top: 13%; opacity: 70%;">
+            </div>
+        </div>
+    </section>
+    <section>
+                <hr>
+                <section>
+        <div class="best-seller-box">
+            <h2>BestSellers</h2>
+            <div class="product">
+                <img src="/images/cold coffee.jpg" alt="Product 1">
+                <p>Cold coffee <br><br>
+                    ₹99/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      <input type="hidden" name="Product-id" value="1" />
+                      <input type="hidden" name="Product-name" value="Cold Coffee">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="button" class="ATC" onclick="window.alert('ITEM WILL BE ADDED TO THE CART')">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="product">
+                <img src="/images/flat white coffee.jpeg" alt="Product 2">
+                <p>Flat white
+                    <br><br>₹189/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      <input type="hidden" name="Product-id" value="2" />
+                      <input type="hidden" name="Product-name" value="Flat white">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="button" class="ATC" onclick="window.alert('ITEM WILL BE ADDED TO THE CART')">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="product">
+                <img src="/images/Espresso.jpeg" alt="Product 3">
+                <p>Espresso
+                    <br><br>₹249/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      <input type="hidden" name="Product-id" value="3" />
+                      <input type="hidden" name="Product-name" value="Espresso">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="button" class="ATC" onclick="window.alert('ITEM WILL BE ADDED TO THE CART')">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="product">
+                <img src="/images/amaricano coffee.jpeg" alt="Product 4">
+                <p>Americano
+                    <br><br>₹369/-
+                </p>
+                <div>
+                    <form action="cart" method="post">
+                      <input type="hidden" name="Product-id" value="4" />
+                      <input type="hidden" name="Product-name" value="Americano">
+                      <input type="hidden" name="action" value="add" />
+                      <button type="button" class="ATC" onclick="window.alert('ITEM WILL BE ADDED TO THE CART')">Add to Cart</button>
+                    </form>
+                  </div>
+            </div>
+                <div class="Explore">
+                    <button><a href='/templates/Menu.html' class="explore-button"><span>&#8594;</span>Explore More</a></button>
+                </div>
+            </section>
+            <hr>
+            <section  class="feedback">
+                <h1>FeedBack</h1>
+            </section>
+            <section  class="fb">
+                <div class="feedback-card">
+                    <div class="feedback-text">
+                    </div>
+                    <div class="feedback-author">
+                    </div>
+                </div>
+            </section>
+    <footer class="ecommerce-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Address</h4>
+                    <p style="font-family: 'FontAwesome';">Pavillion Mall,<br> SB road, <br>Beside opposite Live Space</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt">Email: brewhousecoffee@gmail.com</i></p>
+                    <p><i class="fas fa-envelope">Phone no.: 9211420519</i></p>
+                    <p><i class="fas fa-phone">Telephone: +011 6782 2948</i></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Stay Connected</h4>
+                    <p><i class="fas fa-map-marker-alt"><a href="https://www.instagram.com/" target="_blank">Instagram <br></a></i></p>
+                    <p><i class="fas fa-map-marker-alt"><a href="https://twitter.com/?lang=en" target="_blank">X <br></a></i></p>
+                    <p><i class="fas fa-map-marker-alt"><a href="https://www.facebook.com/" target="_blank">Facebook <br></a></i></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hc">
+            <br>
+            <div class="row">
+                <div class="copyright">
+                    <p >&copy; 2023 BREW HOUSE. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
