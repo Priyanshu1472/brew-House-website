@@ -7,7 +7,43 @@ body{
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+ .hidden2{
+  display: none;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #311c10;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+
+.nav-container ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-container ul li{
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffe4c8;
+  cursor: pointer;
+}
+
+
 
 nav li {
     margin-left: -1px !important;
@@ -21,6 +57,9 @@ nav ul {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .product-card {
@@ -68,11 +107,9 @@ nav ul {
 }
 
 .divisions ul {
-    padding-left: 32%;
-    padding-top: 15px;
     list-style: none;
     display: flex;
-    padding-right: 250px;
+    justify-content: center;
 }
 
 li {
@@ -169,21 +206,30 @@ header {
   font-weight: 100;
 }
 
-#navbar{
-  background-color: #311C10;
+#navbar {
+  background-color: #311c10;
   display: flex;
+}
 
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  margin-left:  250px;
-  margin-top: 55px;
 }
 
 nav li {
-  margin-left: 40px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffe4c8;
+  cursor: pointer;
 }
 
 nav a {
@@ -193,6 +239,7 @@ nav a {
   font-size: 27px;
   font-family: "Book Antiqua";
 }
+
 
 a.underline-on-hover {
   text-decoration: none;
@@ -331,3 +378,175 @@ a{
 a:hover{
     color: white;
 } 
+
+.label-check {
+  display: none;
+}
+
+.hamburger-label {
+  width: 50px;
+  height: 50px;
+  display: block;
+  /* i want to place hamburger to right corner */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.hamburger-label div {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.line1 {
+  transition: all .3s;
+}
+
+.line2 {
+  margin: 10px 0 0 0;
+  transition: 0.3s;
+}
+
+.line3 {
+  margin: 20px 0 0 0;
+  transition: 0.3s;
+}
+
+#label-check:checked + .hamburger-label .line1 {
+  transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+  border-radius: 50px 50px 50px 0;
+}
+
+#label-check:checked + .hamburger-label .line3 {
+  transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+  border-radius: 0 50px 50px 50px;
+}
+
+#label-check:checked + .hamburger-label .line2 {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 45px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media screen and (max-width: 1495px) {
+  nav{
+    display: none;
+  }
+  .hidden{
+    display: block;
+  }
+
+}
+
+
+@media screen and (max-width: 1370px) {
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .background-image {
+    width: 100%;
+    height: auto;
+}
+  .logo h1 {
+    font-size: 40px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .logo h1 {
+    font-size: 30px;
+  }
+  nav {
+    display: none;
+  }
+  .hidden{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 950) {
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .logo h1 {
+    font-size: 20px;
+  }
+  nav ul li a{
+    font-size: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 630px){
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .logo h1 {
+    font-size: 15px;
+  }
+  nav ul li a{
+    font-size: 10px;
+  }
+  .best-seller-box {
+    font-size: 30px; 
+  }
+  .best-seller-box h2 {
+    margin: 0;
+  }
+  .products{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-self: start;
+    width: 80%;
+  }
+  .product {
+    width: 100%;
+    padding: 10px;
+  } 
+  .product img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .product p {
+    font-size: 15px;
+  } 
+  .product-price {
+    padding: 0px 0px 0px 0px;
+  }
+  .ATC {
+    font-size: 12px;
+  }
+  .Explore button {
+    width: 200px;
+    font-size: 15px;
+  }
+  .feedback h1 {
+    font-size: 30px;
+  }
+
+}

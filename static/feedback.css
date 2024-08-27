@@ -8,10 +8,46 @@ body {
 .left-arrow {
   text-decoration: none;
 }
+
+ .hidden2{
+  display: none;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #311c10;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+
+.nav-container ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-container ul li{
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffe4c8;
+  cursor: pointer;
+}
+
 .container {
   width: 420px;
-  margin-top: 10%;
-  margin-left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
   padding: 20px;
   background-color: #ffe4c8;
   border-radius: 5px;
